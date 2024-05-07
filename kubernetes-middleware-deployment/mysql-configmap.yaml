@@ -1,0 +1,12 @@
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: mysql-config
+  namespace: lab2-middlewares
+data:
+  init.sql: |
+    CREATE DATABASE IF NOT EXISTS `ase_user_service_prod`;
+    CREATE DATABASE IF NOT EXISTS `ase_notification_service_prod`;
+    CREATE DATABASE IF NOT EXISTS `ase_conference_service_prod`;
+    CREATE DATABASE IF NOT EXISTS `ase_contribute_service_prod`;

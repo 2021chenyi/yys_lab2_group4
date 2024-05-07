@@ -1,0 +1,12 @@
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: redis-config
+  namespace: lab2-middlewares
+data:
+  redis.conf: |
+    bind 0.0.0.0
+    protected-mode no
+    requirepass 5iwrnpFC4BRqADn6qCFV
+    appendonly yes
